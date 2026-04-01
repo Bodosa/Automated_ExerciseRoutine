@@ -114,7 +114,7 @@ for card in all_cards:
         when_text = when_paragraph.text
 
         # checking if it's Thu or Tues class
-        if ("Tue" in when_text or "Thu" in when_text) and "6:00 PM" in when_text:
+        if ("Wed" in when_text or "Thu" in when_text) and "6:00 PM" in when_text:
             class_name = card.find_element(By.TAG_NAME, "h3").text
             print(f"  ✓ Verified: {class_name}")
             verified_count += 1
